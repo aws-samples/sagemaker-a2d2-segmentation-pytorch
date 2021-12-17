@@ -61,8 +61,6 @@ if __name__ == "__main__":
 
     target_transform = Resize((args.height, args.width), interpolation=InterpolationMode.NEAREST)
 
-    # s3_resource = boto3.resource('s3')
-
     train_data = A2D2_S3_dataset(
         cache=args.cache,
         height=args.height,
