@@ -40,7 +40,7 @@ if __name__ == "__main__":
     parser.add_argument("--amp", type=str, default="True")
 
     # Data, model, and output directories
-    parser.add_argument("--cache", type=str, default="/tmp")
+    parser.add_argument("--cache", type=str)
     parser.add_argument("--network", type=str, default="deeplabv3_mobilenet_v3_large")
     parser.add_argument("--model-dir", type=str, default=os.environ.get("SM_MODEL_DIR"))
     parser.add_argument("--checkpoint-dir", type=str, default="/opt/ml/checkpoints")
